@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+       <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Laptop store</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+         
+    <div class="header"> 
+             
+           
+        <div class="container">
+            <div class="navbar">
+                 <div class="logo">
+                    <a href="index.html"><img src="log.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Account.html">Login</a></li>
+                        <li><a href="signup.html">Sign up</a></li>
+                        <li><a href="insertproduct.html">Product</a></li>
+    
+                    </ul>
+                </nav>                
+                <form id="sign up">
+                    <input type="text" placeholder="First Name">
+                    <input type="email" placeholder="Last Name">
+                    <input type="password" placeholder="Birth Date">
+                    <input type="password" placeholder="Gmail">
+                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Confirm Password">
+                    <button type="submit" class="btn">Sign Up</button>
+                </form>
+                <script>
+                    var MenuItems = document.getElementById("MenuItems");
+                    MenuItems.style.maxHeight="0px";
+                    function menutoggle(){
+                        if(MenuItems.style.maxHeight == "0px")
+                            {
+                                MenuItems.style.maxHeight = "200px";
+                                
+                            }
+                        else{
+                            MenuItems.style.maxHeight = "0px";
+                        }
+                    }
+                </script>
+                 
+            </body>
+            </html>
